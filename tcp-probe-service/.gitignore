@@ -1,0 +1,21 @@
+# Maven 构建产物与本地依赖缓存
+target/
+.m2/
+
+# IDE 和编辑器本地配置
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+.factorypath
+
+# 日志、崩溃转储和操作系统临时文件
+*.log
+hs_err_pid*
+replay_pid*
+.DS_Store
+Thumbs.db
+
+docs/DESIGN.md

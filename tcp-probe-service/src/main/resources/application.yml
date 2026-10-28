@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+probe:
+  # 单个 TCP 连接的默认超时时间；调用方可在 100～10000ms 范围内覆盖。
+  default-timeout-ms: 3000
+  # 控制同一时间最多执行多少个阻塞式 Socket 连接。
+  worker-threads: 20
+  # 等待执行的任务上限，超过后返回 SERVER_BUSY。
+  queue-capacity: 200
+  # 全局每秒补充的探测令牌数。
+  permits-per-second: 50
+  # 允许短时间突发的最大令牌数量。
+  burst-capacity: 50
